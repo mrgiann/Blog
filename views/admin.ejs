@@ -1,7 +1,7 @@
 <%-include("partials/header") %>
 <link rel="stylesheet" href="/css/admin.css">
 </head>
-<body class="vh-100">
+<body>
 
   <%-include("partials/navbar") %>
         <div class="row">
@@ -13,7 +13,7 @@
                 <div class="col-md-4 mx-auto">
                     <form action="#" id="form-nuevo">
                         <div class="mb-3">
-                            <input type="text" id="titulo" placeholder="titulo" class="form-control">
+                            <input type="text" id="titulo" placeholder="Titulo" class="form-control">
                         </div>
                         <div class="form-floating mb-3">
                             <textarea class="form-control" placeholder="Leave a comment here" id="detalle"
@@ -21,15 +21,19 @@
                             <label for="floatingTextarea2">Detalle</label>
                         </div>
                         <div class="mb-3">
-                            <input type="text" id="url_imagen" placeholder="url_imagen" class="form-control">
+                            <input type="text" id="url_imagen" placeholder="URL imagen" class="form-control">
                         </div>
                         
                         <div class="mb-3">
                             <input type="date" id="fecha_publicacion" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <input type="text" id="firma_autor" class="form-control">
+                            <input type="time" id="hora_manual" placeholder="Hora manual" class="form-control">
                         </div>
+                        <div class="mb-3">
+                            <input type="text" id="firma_autor" placeholder="Firma autor" class="form-control">
+                        </div>
+ 
                         <button type="submit" class="btn btn-sm btn-primary">
                             Guardar
                         </button>
@@ -44,4 +48,7 @@
 
     <script src="/js/admin.js" type="module"></script>
 
-    <%-include("partials/footer") %>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm' crossorigin='anonymous'></script>
+
+</body>
+</html>

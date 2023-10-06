@@ -23,6 +23,10 @@ const Publicacion = sequelize.define('Publicacion', {
         allowNull: true,
         defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
     },
+    hora_manual: {
+        type: DataTypes.TIME,
+        allowNull: true,
+    },
     firma_autor: {
         type: DataTypes.STRING(255),
         allowNull: false
