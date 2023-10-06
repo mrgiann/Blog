@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+h1.text-center {
+    color: #000; /* Texto negro */
+    transition: color 0.3s, text-shadow 0.3s; /* Transición suave */
+}
