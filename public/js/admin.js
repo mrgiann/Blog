@@ -19,3 +19,5 @@ formNuevaPub.addEventListener('submit', async (e) => {
     alert(respuesta.msg);
     location.href='/'
 })
+
+// Admin
