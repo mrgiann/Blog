@@ -1,6 +1,4 @@
-<h1 align="center"> Proyecto de Foro Integrador </h1>
-
-Este repositorio contiene un proyecto de foro desarrollado como parte de un examen integrador de Programa 4.0 y Epica Sapem.
+<h1 align="center"> Proyecto de Foro</h1>
 
 | ![Express Nodejs](https://miro.medium.com/v2/resize:fit:1400/1*f7ztMaMM0etsFHpEfkdiwA.png) | ![EJS](https://cdn.hashnode.com/res/hashnode/image/upload/v1669904581074/eiOU4pInF.png) | ![XAMPP](https://www.sysadminsdecuba.com/wp-content/uploads/2015/08/xampp-logo.jpg) |
 | --- | --- | --- |
