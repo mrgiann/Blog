@@ -33,6 +33,7 @@ CREATE TABLE `publicaciones` (
   `detalle` text NOT NULL,
   `url_imagen` varchar(255) NOT NULL,
   `fecha_publicacion` date NOT NULL,
+  `hora_manual` text NULL,
   `firma_autor` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 

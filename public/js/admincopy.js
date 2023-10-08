@@ -1,0 +1,22 @@
+import { crearPublicaciones } from './crud-postcopy.js';
+
+
+// Referencia a elemento formulario de nueva publicación
+const formNuevaPub = document.querySelector('#form-nuevo');
+
+formNuevaPub.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = {
+        titulo: document.querySelector('#titulo').value,
+        detalle: document.querySelector('#detalle').value,
+        url_imagen: document.querySelector('#url_imagen').value,
+        fecha_publicacion: document.querySelector('#fecha_publicacion').value,
+        hora_manual: document.querySelector('#hora_manual').value,
+        firma_autor: document.querySelector('#firma_autor').value,
+    }
+    const respuesta = await crearPublicaciones(data)
+    
+    alert(respuesta.msg);
+    location.href='/'
+})

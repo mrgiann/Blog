@@ -29,8 +29,32 @@ section.d-flex {
   background-color: #222;
 }
 
+section.editor{
+  border: 1px solid white;
+  padding:15px;
+  max-width: 700px;
+  width: 700px;
+  background-color: #444;
+}
+section.editor img{
+  margin-right: 20px;
+}
+
+section.editor h4{
+  max-width: 100px;
+}
+
+.contenidoeditor{
+  gap: 20px;
+}
+
 @media (width < 700px) {
   section.d-flex{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.editor{
     display: flex;
     flex-direction: column;
   }
