@@ -30,10 +30,9 @@ section.d-flex {
 }
 
 section.editor{
-  border: 1px solid white;
+  border: none;
   padding:15px;
-  max-width: 700px;
-  width: 700px;
+  width: auto;
   background-color: #444;
 }
 section.editor img{
@@ -55,6 +54,10 @@ section.editor h4{
   }
 
   section.editor{
+    display: flex;
+    flex-direction: column;
+  }
+  .contenidoeditor {
     display: flex;
     flex-direction: column;
   }
@@ -82,4 +85,27 @@ img:hover {
 
 .container-fluid {
   margin-left: 20px;
+}
+
+#cuadro-editar{
+  border: 1px white solid;
+  margin-bottom: 50px;
+  width: 600px;
+}
+
+#formulario-editar{
+  padding: 20px;
+}
+
+
+#formulario-editar form{
+  max-width: 600px;
+}
+
+#mostrarFormulario{
+  margin-bottom: 20px;
+}
+
+#form-nuevo{
+  max-width: 531px;
 }

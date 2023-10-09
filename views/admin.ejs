@@ -2,44 +2,65 @@
 <link rel="stylesheet" href="/css/admin.css">
 </head>
 <body>
-
   <%-include("partials/navbar") %>
-        <div class="row">
-                <div class="col">
-                    <h1 class="text-center">Nueva publicación</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mx-auto">
-                    <form action="#" id="form-nuevo">
-                        <div class="mb-3">
-                            <input type="text" id="titulo" placeholder="Titulo" class="form-control">
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="detalle"
-                                style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">Detalle</label>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" id="url_imagen" placeholder="URL imagen" class="form-control">
-                        </div>
-                        
-                        <div class="mb-3">
-                            <input type="date" id="fecha_publicacion" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <input type="time" id="hora_manual" placeholder="Hora" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" id="firma_autor" placeholder="Firma autor" class="form-control">
-                        </div>
- 
-                        <button type="submit" class="btn btn-sm btn-primary">
-                            Guardar
-                        </button>
-                    </form>
-                </div>
-            </div>
+
+  <div class="row">
+    <div class="col">
+      <h1 class="text-center">Nueva publicación</h1>
+      <div class="container">
+      <button id="mostrarFormulario" class="btn btn-sm btn-primary">Nueva publicación</button>
+    </div>
+    </div>
+  </div>
+
+  <!-- Formulario (inicialmente oculto) -->
+  <div class="row" id="formulario" style="display: none;">
+    <div class="col-md-4 mx-auto">
+      <form action="#" id="form-nuevo">
+        <div class="mb-3">
+          <input type="text" id="titulo" placeholder="Titulo" class="form-control">
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" id="detalle" style="height: 100px"></textarea>
+          <label>Detalle:</label>
+      </div>
+        <div class="mb-3">
+          <input type="text" id="url_imagen" placeholder="URL imagen" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <input type="date" id="fecha_publicacion" class="form-control">
+        </div>
+        <div class="mb-3">
+          <input type="time" id="hora_manual" placeholder="Hora" class="form-control">
+        </div>
+        <div class="mb-3">
+          <input type="text" id="firma_autor" placeholder="Firma autor" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-sm btn-primary">
+          Guardar
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript para mostrar/ocultar el formulario -->
+  <script>
+    const mostrarFormularioBtn = document.getElementById('mostrarFormulario');
+    const formulario = document.getElementById('formulario');
+
+    // Agregamos un controlador de eventos al botón para mostrar/ocultar el formulario
+    mostrarFormularioBtn.addEventListener('click', () => {
+      if (formulario.style.display === 'none' || formulario.style.display === '') {
+        formulario.style.display = 'block'; // Mostrar el formulario
+      } else {
+        formulario.style.display = 'none'; // Ocultar el formulario
+      }
+    });
+
+  </script>
+</body>
 
             <div class="container">
             <div class="row">
